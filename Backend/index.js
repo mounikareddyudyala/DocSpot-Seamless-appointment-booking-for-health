@@ -4,10 +4,10 @@ const cors = require("cors");
 const connectToDB = require("./config/connectToDB");
 
 const app = express();
+
 //////dotenv config/////////////////////
 dotenv.config();
 connectToDB();
-const PORT = process.env.PORT;
 
 /////////////////middlewares////////////////
 app.use(express.json());
@@ -20,10 +20,9 @@ app.use((err, req, res, next) => {
 /////////routes//////////////////////
 app.use('/api/user/', require('./routes/userRoutes'))
 app.use('/api/admin/', require('./routes/adminRoutes'))
-app.use('/api/doctor',require('./routes/doctorRoutes'))
+app.use('/api/doctor', require('./routes/doctorRoutes'))
 
-
-
+// ✅ KEEP ONLY THIS
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
