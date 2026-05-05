@@ -1,4 +1,4 @@
-# DocSpot-Seamless-appointment-booking-for-health
+# DocSpot-Seamless-appointment-booking-for-health Framework Settings  
 docspot-seamless-appointment-booking-for-health is a full-stack web application designed to make healthcare more accessible by simplifying the process of booking doctor appointments. It offers three levels of login: Patient, Doctor, and Admin, each with distinct features tailored to their roles. The app integrates online payment gateways (Stripe and Razorpay) to facilitate seamless and secure payments. Built using the MERN stack (MongoDB, Express.js, React.js, and Node.js), Prescripto provides an efficient, user-friendly experience for both patients and healthcare providers.
 
 🛠 Tech Stack
